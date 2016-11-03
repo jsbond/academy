@@ -7,6 +7,7 @@ public class Test {
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
         A instance = new A();
         System.out.println(instance.getSecret());
+
         Class<A> c = A.class;
         Field f = c.getDeclaredField("secret");
         f.setAccessible(true);

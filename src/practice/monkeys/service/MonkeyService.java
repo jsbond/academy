@@ -16,10 +16,12 @@ public class MonkeyService {
 
     public static void main(String[] args) {
         Branch tree = createTree(FruitType.COCOS.name());
+        Branch bananaTree = createTree(FruitType.BANANA.name());
 
         Calculation monkey = new CocosMonkey();
 
-        calculate(monkey, tree);
+        //calculate(monkey, tree);
+        calculate(monkey, bananaTree);
 
         System.out.println(monkey.getNumberOfFruits());
     }

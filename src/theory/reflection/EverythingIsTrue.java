@@ -4,6 +4,13 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
 public class EverythingIsTrue {
+
+    public static void main(String args[]) throws Exception {
+        setFinalStatic(Boolean.class.getField("FALSE"), true);
+        Boolean test = false;
+        System.out.println("Everything is " + test); // "Everything is true"
+    }
+
     static void setFinalStatic(Field field, Object newValue) throws Exception {
         field.setAccessible(true);
 
@@ -12,10 +19,5 @@ public class EverythingIsTrue {
         modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
 
         field.set(null, newValue);
-    }
-    public static void main(String args[]) throws Exception {
-        setFinalStatic(Boolean.class.getField("FALSE"), true);
-        Boolean test = false;
-        System.out.println("Everything is " + test); // "Everything is true"
     }
 }
