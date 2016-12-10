@@ -2,7 +2,7 @@ package theory.lecture_2.ex_2_wrapers;
 
 public class Main {
     public static void main(String[] args) {
-        Integer i = 71;
+        Integer i = 10;
         int j = i;
 
         Integer i2 = null;

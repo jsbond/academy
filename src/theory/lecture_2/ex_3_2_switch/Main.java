@@ -1,16 +1,17 @@
-package theory.lecture_2.ex_3_switch;
+package theory.lecture_2.ex_3_2_switch;
 
 public class Main {
     public static void main(String[] args) {
         // в качестве входящего параметра может быть число, строка, символ а также enum
-        String season = "autumn";
-
-        switch (season) {
-            case "autumn": {
+        int x = 1;
+               switch (x) {
+            case 1: {
                 System.out.println("Осень!");
+                break;
             }
-            case "winter": {
+            case 2: {
                 System.out.println("Зима!");
+                break;
             }
             default:{
                 System.out.println("ошибка");
