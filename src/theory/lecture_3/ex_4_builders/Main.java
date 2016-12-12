@@ -3,7 +3,6 @@ package theory.lecture_3.ex_4_builders;
 public class Main {
 
     public static void main(String[] args) {
-
         //StringBuilder позволяет не создавать при конкатенации (сложении, склеивании строк) каждый раз новую строку.
         StringBuilder sb = new StringBuilder(1);
         prepareBuilder(sb);
