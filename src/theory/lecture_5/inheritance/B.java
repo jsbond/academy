@@ -1,7 +1,7 @@
 package theory.lecture_5.inheritance;
 
 public class B extends A {
-
+    protected int variable = 20;
     private final static String url;
 
     // в статическом блоке можно, например, проинициализировать статические переменные
@@ -28,5 +28,9 @@ public class B extends A {
         //super();
         System.out.println("конструктор потомка");
         this.setVariable(variable);
+    }
+
+    public int getVariable() {
+        return variable;
     }
 }

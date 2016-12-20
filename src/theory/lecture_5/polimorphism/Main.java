@@ -9,7 +9,7 @@ public class Main {
 
         A object = new B();
 
-        // это пример полиморфизма, метод getVariable() переопределен в классе-потомке.
+        // это пример полиморфизма, метод getB() переопределен в классе-потомке.
         System.out.println(object.getVariable());
         System.out.println(object.getStaticVar());
 
