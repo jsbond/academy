@@ -9,9 +9,7 @@ public enum Season {
     SUMMER(92),
     AUTUMN(91);
 
-    String[] months = new String[3];
     private int countOfDays;
-    private int countOfDays2;
 
     Season(int countOfDays) {
         this.countOfDays = countOfDays;
@@ -19,13 +17,5 @@ public enum Season {
 
     public int getCountOfDays() {
         return countOfDays;
-    }
-
-    public int getCountOfDays2() {
-        return countOfDays2;
-    }
-
-    public void setCountOfDays2(int countOfDays2) {
-        this.countOfDays2 = countOfDays2;
     }
 }
