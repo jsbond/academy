@@ -1,17 +1,12 @@
-package theory.lecture_6;
+package theory.lecture_6.ex_2_enums.ex_2_1;
 
-import java.io.Serializable;
+import theory.lecture_6.ex_2_enums.ex_2_2.Season;
 
 /**
  * Created by StudentTC on 25.10.2016.
  */
 public class Main {
     public static void main(String[] args) {
-        OuterClass.NestedClass nested = OuterClass.getNested();
-
-        OuterClass clazz = new OuterClass();
-//        OuterClass.InnerClass inner = clazz.new InnerClass();
-
         Season season = Season.SPRING;
         System.out.println(season.getCountOfDays());
         System.out.println(season.name());
@@ -24,18 +19,6 @@ public class Main {
                 break;
             }
         }
-
-
         Season season1 = Season.valueOf("AUTUMN");
-        Interf interf = new B();
-        interf = new B1();
-        interf = new C();
-        interf.method();
-        A a = new A(interf);
-
-    }
-
-    public void method(Serializable value) {
-
     }
 }

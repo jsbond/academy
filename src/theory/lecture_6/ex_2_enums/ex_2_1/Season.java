@@ -1,4 +1,4 @@
-package theory.lecture_6;
+package theory.lecture_6.ex_2_enums.ex_2_1;
 
 /**
  * Created by StudentTC on 25.10.2016.
@@ -9,6 +9,7 @@ public enum Season {
     SUMMER(92),
     AUTUMN(91);
 
+    String[] months = new String[3];
     private int countOfDays;
     private int countOfDays2;
 
