@@ -18,4 +18,10 @@ public enum Season {
     public int getCountOfDays() {
         return countOfDays;
     }
+
+
+    @Override
+    public String toString() {
+        return "Not yet!";
+    }
 }

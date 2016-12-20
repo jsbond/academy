@@ -1,5 +1,8 @@
 package theory.lecture_5.polimorphism;
 
+import theory.lecture_5.interfaces_and_abstract.Runnable;
+import theory.lecture_5.interfaces_and_abstract.ToyotaCamry;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -15,5 +18,13 @@ public class Main {
 
         // статические методы относятся к классу и не переопределяются!
         // В примере выводится в консоль переменная предка, т.к. у нас A object переменная, берется метод этого класса.Т.е. для статических методов\переменных не действует полиморфизм
+
+        ToyotaCamry camry = new ToyotaCamry();
+        Runnable camry1 = new ToyotaCamry();
+
+    }
+
+    public void print(Runnable abc) {
+        System.out.println(abc);
     }
 }

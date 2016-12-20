@@ -8,5 +8,6 @@ public class Main {
         //нельзя объявить enum как inner class
         //при объявлении интерфейса inner классом, он все равно static
         OuterClass.InnerClass inner = new OuterClass().new InnerClass();
+        OuterClass.InnerClass inner2 = new OuterClass().getInstance();
     }
 }

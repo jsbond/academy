@@ -9,6 +9,11 @@ public class Main {
 
         String[] months = season.getMonths();
 
-        System.out.println(months);
+        System.out.println(months[0]);
+
+        season = Season.AUTUMN;
+        months = season.getMonths();
+
+        System.out.println(months[0]);
     }
 }

@@ -18,6 +18,7 @@ public class OuterClass {
 
     }
 
-
-
+    public InnerClass getInstance() {
+        return new InnerClass();
+    }
 }
