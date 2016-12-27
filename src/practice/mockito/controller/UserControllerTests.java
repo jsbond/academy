@@ -1,9 +1,6 @@
 package practice.mockito.controller;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,9 +10,13 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.runners.MockitoJUnitRunner;
+import practice.mockito.controller.UserController;
 import practice.mockito.model.User;
 import practice.mockito.service.BookingService;
 import practice.mockito.service.UserService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @RunWith(MockitoJUnitRunner.class)
 public class UserControllerTests {
