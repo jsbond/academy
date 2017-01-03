@@ -9,7 +9,7 @@ public class Main {
         setFinalStatic(Boolean.class.getField("FALSE"), true);
 
         Boolean test = false;
-        System.out.println("Everything is " + test); // "Everything is true"
+        System.out.println("Everything is " + (Boolean) false); // "Everything is true"
     }
 
     static void setFinalStatic(Field field, Object newValue) throws Exception {

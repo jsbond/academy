@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
  * Created by StudentTC on 01.11.2016.
  */
 public class Bob {
-    private static Logger logger = Logger.getLogger(Main.class);
+    private static Logger logger = Logger.getLogger(Bob.class);
 
     public void swim_10() throws Exception, Error {
         logger.info("заплыли на 10м");

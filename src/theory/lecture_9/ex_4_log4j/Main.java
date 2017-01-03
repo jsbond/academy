@@ -9,7 +9,12 @@ public class Main {
     private static Logger logger = Logger.getLogger(Main.class);
 
     public static void main(String[] args) throws Exception {
-        Bob bob = new Bob();
-        bob.swim_10();
+        logger.fatal("Fatal!");
+        logger.error("Error!");
+        logger.warn("Warn!");
+        logger.info("Info!");
+        logger.debug("Debug!");
+//        Bob bob = new Bob();
+//        bob.swim_10();
     }
 }

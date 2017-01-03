@@ -21,12 +21,14 @@ public class Bob implements Man {
             result = "привет, дорогая";
         } else if (clazz.isAnnotationPresent(Friend.class)){
             Friend annotation = (Friend) clazz.getAnnotation(Friend.class);
+
             StringBuilder stringBuilder = new StringBuilder();
 
             result = stringBuilder
                     .append(annotation.name())
                     .append(", ")
-                    .append(getStory()).toString();
+                    .append(getStory())
+                    .toString();
         }
         return result;
     }
