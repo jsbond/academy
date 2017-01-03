@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * for first example
+ * for first ex_2_annotations
  */
 public class Circle implements Serializable {
     private Date createdBy;

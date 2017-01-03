@@ -2,12 +2,14 @@ package theory.lecture_9.ex_1_throw_exception;
 
 import java.io.IOException;
 
-/**
- * Created by StudentTC on 01.11.2016.
- */
+
 public class Bob {
 
-    public void swim_10() throws Exception, Error {
+    public void tellStory() throws Exception, Error{
+        swim_10();
+    }
+
+    private void swim_10() throws Exception, Error {
         System.err.println("заплыли на 10м");
         swim_20();
         System.err.println("уплываем с 10м");

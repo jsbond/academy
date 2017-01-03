@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * for second example
+ * for second ex_2_annotations
  *
  */
 public class Rectangle extends Shape implements Serializable {

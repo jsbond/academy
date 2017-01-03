@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * for third example
+ * for third ex_2_annotations
  */
 public class Square implements Serializable {
     private Date createdBy;

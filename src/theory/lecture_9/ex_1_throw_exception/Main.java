@@ -7,6 +7,6 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Bob bob = new Bob();
-        bob.swim_10();
+        bob.tellStory();
     }
 }
