@@ -1,4 +1,4 @@
-package theory.lecture_9.ex_2_try_catch;
+package theory.lecture_9.ex_3_finally;
 
 import java.io.IOException;
 
@@ -20,14 +20,12 @@ public class Bob {
             swim_50();
 
             System.err.println("плывем на 20м");
-        } catch (Error r) {
-
-        } catch (IOException t) {
+        } catch (Exception r) {
             System.err.println("акула уплывает на глубине 20м");
-        } catch (Exception e) {
-
+        } finally {
+            throw new Exception();
         }
-        System.err.println("уплываем с 20м");
+
     }
 
     private void swim_50() throws IOException {

@@ -26,7 +26,7 @@ public class Bob {
 
         throw new IOException("акула");
 
-        //System.out.println("жемчуг");
-        //System.out.println("уплываем с 50м");
+//        System.err.println("жемчуг");
+//        System.err.println("уплываем с 50м");
     }
 }
