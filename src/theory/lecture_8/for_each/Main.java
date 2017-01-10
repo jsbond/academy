@@ -21,18 +21,18 @@ public class Main {
 //            System.out.println(stringList.get(i));
 //        }
 
-        Iterator<String> iterator = stringList.iterator();
+//        Iterator<String> iterator = stringList.iterator();
 
-        while (iterator.hasNext()) {
-            String string = iterator.next();
-            System.out.println(string);
-            stringList.remove(5);
-            iterator.remove();
-        }
+//        while (iterator.hasNext()) {
+//            String string = iterator.next();
+//            System.out.println(string);
+//            stringList.remove(5);
+//            iterator.remove();
+//        }
 
         for (String string : stringList) {
             System.out.println(string);
-            stringList.remove(5);
+//            stringList.remove(5);
         }
 
     }

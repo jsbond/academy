@@ -3,6 +3,9 @@ package theory.lecture_11;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import theory.lecture_11.ex_1_streams.BytesCopier;
+import theory.lecture_11.ex_2_rw.CharactersCopier;
+import theory.lecture_11.ex_3_buffer.BufferCopier;
 
 /**
  * Created by Антон on 06.11.2016.
@@ -25,8 +28,8 @@ public class Main implements Copier {
 //        Main service2 = new Main(new CharactersCopier());
 //        service2.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
 
-//        Main service3 = new Main(new BufferCopier());
-//        service3.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
+        Main service3 = new Main(new BufferCopier());
+        service3.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
     }
 
     @Override

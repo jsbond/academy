@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by Антон on 06.11.2016.
  */
 public class MyObject implements Serializable {
+
     private int x = 5;
     private String string = "Это строка";
 

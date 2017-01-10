@@ -10,7 +10,8 @@ public class Main {
         try (ObjectOutputStream out = new ObjectOutputStream(
                 new FileOutputStream("resources/out.txt"));
              ObjectInputStream in = new ObjectInputStream(
-                     new FileInputStream("resources/out.txt"))) {
+                     new BufferedInputStream(
+                     new FileInputStream("resources/out.txt")))) {
 
             MyObject my = new MyObject();
             out.writeObject(my);

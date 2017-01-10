@@ -14,6 +14,7 @@ import java.util.Scanner;
  */
 public class Main {
     public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
         try (Scanner s = new Scanner(new BufferedReader(new FileReader("resources/from.txt")))) {
             //заменяем разделитель
 //            s.useDelimiter("e");
