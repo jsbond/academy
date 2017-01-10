@@ -1,4 +1,4 @@
-package theory.lecture_12.example_2;
+package theory.lecture_12.ex_2_1_interrupt;
 
 public class MyThread extends Thread {
 
@@ -10,7 +10,6 @@ public class MyThread extends Thread {
             } catch (InterruptedException e) {
                 System.out.println("прервано");
             }
-
         }
     }
 }

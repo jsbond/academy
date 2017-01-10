@@ -1,8 +1,7 @@
-package theory.lecture_12.example_3;
+package theory.lecture_12.ex_3_1_syncronized_block;
 
 /**
- * Класс демонстрирует возможность перевести поток из состояния Runnable в Waiting
- * и после завершения цикла другого потока вернуть его обратно.
+ * Класс демонстрирует использования syncronized блока для синхронизации потоков выполнения
  */
 public class Main {
 
@@ -11,10 +10,10 @@ public class Main {
 
         Thread thread1 = new MyThread(service);
         thread1.start();
-
+        Thread.sleep(5000);
         synchronized (service) {
             System.out.println("main thread waiting for notify...");
-            service.wait();
+
             System.out.println(service.getCounter());
         }
     }

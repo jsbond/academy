@@ -1,6 +1,5 @@
 package theory.lecture_14.db;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -12,9 +11,7 @@ public class UserDAO extends AbstractDAO {
     @Override
     public User getUser(int userId) {
         User user = new User();
-        try (
-                Connection connection = JDBCFactory.getConnection();
-                Statement statement = connection.createStatement()) {
+        try (Statement statement = connection.createStatement()) {
 
             ResultSet rs = statement.executeQuery(getQuery + userId);
 //            statement.executeUpdate(getQuery);

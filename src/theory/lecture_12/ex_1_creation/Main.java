@@ -1,7 +1,7 @@
-package theory.lecture_12.example_1;
+package theory.lecture_12.ex_1_creation;
 
 /**
- * прерывание потока
+ * Создание потоков с помощью наследования класса Thread или использования интерфейса Runnable
  */
 public class Main {
 

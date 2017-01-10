@@ -1,6 +1,5 @@
 package theory.lecture_14.db;
 
-import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -13,9 +12,7 @@ public class UserDAOV2 extends AbstractDAO {
     public User getUser(int userId) {
 
         User user = new User();
-        try (
-                Connection connection = JDBCFactory.getConnection();
-                PreparedStatement statement = connection.prepareStatement(getQuery)) {
+        try (PreparedStatement statement = connection.prepareStatement(getQuery)) {
 
             statement.setInt(1, userId);
 

@@ -1,4 +1,4 @@
-package theory.lecture_12.callable;
+package theory.lecture_12.example_7_callable;
 
 import java.util.concurrent.Callable;
 

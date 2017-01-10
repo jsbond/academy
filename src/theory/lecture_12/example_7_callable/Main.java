@@ -1,4 +1,4 @@
-package theory.lecture_12.callable;
+package theory.lecture_12.example_7_callable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class Main {
 
         for (int i=0; i<4; i++)
         {
-            Integer number = random.nextInt(10);
+            Integer number = random.nextInt(20);
             FactorialCalculator calculator  = new FactorialCalculator(number);
             Future<Integer> result = executor.submit(calculator);
             resultList.add(result);
@@ -30,7 +30,7 @@ public class Main {
         {
             try
             {
-                System.out.println("Future result is - " + future.get() + "; And Task done is " + future.isDone());
+                System.out.println("Future result is: " + future.get() + "; And Task done is " + future.isDone());
             }
             catch (InterruptedException | ExecutionException e)
             {

@@ -1,4 +1,4 @@
-package theory.lecture_12.example_1;
+package theory.lecture_12.ex_1_creation;
 
 public class MyThread extends Thread {
 

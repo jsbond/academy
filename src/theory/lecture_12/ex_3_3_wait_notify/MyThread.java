@@ -1,4 +1,4 @@
-package theory.lecture_12.example_3;
+package theory.lecture_12.ex_3_3_wait_notify;
 
 public class MyThread extends Thread {
     final Service service;
