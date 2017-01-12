@@ -2,8 +2,7 @@ package theory.lecture_12.example_7_callable;
 
 import java.util.concurrent.Callable;
 
-class FactorialCalculator implements Callable<Integer>
-{
+class FactorialCalculator implements Callable<Integer> {
 
     private Integer number;
 

@@ -1,7 +1,7 @@
-package theory.lecture_12.ex_3_3_wait_notify;
+package theory.lecture_12.ex_6_1;
 
 public class MyThread extends Thread {
-    final Service service;
+    private final Service service;
 
     public MyThread(Service service) {
         this.service = service;
@@ -9,7 +9,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 1_000_000_000; i++) {
             service.increment();
         }
     }

@@ -1,13 +1,13 @@
 package theory.lecture_12.ex_3_3_wait_notify;
 
 public class Service {
-    private int counter;
+    private volatile Long counter;
 
-    public synchronized void increment() {
+    public void increment() {
         counter++;
     }
 
-    public int getCounter() {
+    public Long getCounter() {
         return counter;
     }
 }

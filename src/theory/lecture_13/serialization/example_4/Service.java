@@ -32,8 +32,8 @@ class Service {
         try (FileInputStream fis = new FileInputStream("test.txt"); ObjectInputStream in = new ObjectInputStream(fis)) {
             object = (Circle) in.readObject();
             System.out.println(" число: " + object.getRadius());
-//            object = (Circle) in.readObject();
-//            System.out.println(" число: " + object.getRadius());
+            object = (Circle) in.readObject();
+            System.out.println(" число: " + object.getRadius());
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -11,10 +11,18 @@ public class Main {
         Thread thread1 = new MyThread(service);
         thread1.start();
         Thread.sleep(5000);
+
         synchronized (service) {
             System.out.println("main thread waiting for notify...");
 
             System.out.println(service.getCounter());
         }
+
+
     }
+
+    public synchronized static void run() {
+
+    }
+
 }

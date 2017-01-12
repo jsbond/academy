@@ -1,11 +1,9 @@
-package theory.lecture_12.ex_3_3_wait_notify;
+package theory.lecture_12.ex_6_1;
 
 /**
- * Класс демонстрирует возможность перевести поток из состояния Runnable в Waiting
- * и после завершения цикла другого потока вернуть его обратно.
+ * Created by StudentTC on 10.01.2017.
  */
 public class Main {
-
     public static void main(String[] args) throws InterruptedException {
         Service service = new Service();
 
@@ -19,6 +17,5 @@ public class Main {
         thread2.join();
 
         System.out.println(service.getCounter());
-
     }
 }

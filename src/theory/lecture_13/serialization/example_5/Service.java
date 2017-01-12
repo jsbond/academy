@@ -21,7 +21,7 @@ class Service {
             e.printStackTrace();
         }
 
-        sr.setLength(1000); //после сериализации меняем значение поля чтобы убедиться, что оно не было сериализовано
+        Ellipse.setLength(1000); //после сериализации меняем значение поля чтобы убедиться, что оно не было сериализовано
         Ellipse object = null;
 
         try (FileInputStream fis = new FileInputStream("test.txt"); ObjectInputStream in = new ObjectInputStream(fis)) {

@@ -11,7 +11,7 @@ public class Main {
         myThread.start();                                                   //RUNNABLE
 
         Thread.sleep(1000);
-
+//        myThread.stop();
         myThread.interrupt();                                              // TERMINATED
     }
 }

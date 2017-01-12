@@ -3,6 +3,7 @@ package theory.lecture_11;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 import theory.lecture_11.ex_1_streams.BytesCopier;
 import theory.lecture_11.ex_2_rw.CharactersCopier;
 import theory.lecture_11.ex_3_buffer.BufferCopier;

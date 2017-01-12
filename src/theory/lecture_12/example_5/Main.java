@@ -18,6 +18,6 @@ public class Main {
         thread1.start();
         thread2.start();
 
-        thread2.setDaemon(true);
+        thread2.setDaemon(true); //почему ошибка
     }
 }
