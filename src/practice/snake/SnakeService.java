@@ -172,4 +172,20 @@ public class SnakeService {
         LEFT,
         UP;
     }
+
+    public String getDrawSymbol() {
+        return drawSymbol;
+    }
+
+    public void setDrawSymbol(String drawSymbol) {
+        this.drawSymbol = drawSymbol;
+    }
+
+    public String getDefaultBoardSymbol() {
+        return defaultBoardSymbol;
+    }
+
+    public void setDefaultBoardSymbol(String defaultBoardSymbol) {
+        this.defaultBoardSymbol = defaultBoardSymbol;
+    }
 }
