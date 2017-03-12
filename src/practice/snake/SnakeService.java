@@ -59,7 +59,7 @@ public class SnakeService {
     private Coordinates getCoordinatesWithCurrentDirection() {
         Coordinates coordinates = new Coordinates(snake.coordinates);
 
-        switch(snake.currentDirection) {
+        switch (snake.currentDirection) {
             case RIGHT:
                 coordinates.x++;
                 break;
@@ -92,7 +92,7 @@ public class SnakeService {
         return true;
     }
 
-    private boolean hasDrawnSymbolAndNotPrevious (int x, int y) {
+    private boolean hasDrawnSymbolAndNotPrevious(int x, int y) {
         if (x >= board.length || y >= board.length || x < 0 || y < 0) {
             return false;
         }
@@ -127,7 +127,6 @@ public class SnakeService {
             } else {
                 currentDirection = allDirections[0];
             }
-
         }
     }
 
