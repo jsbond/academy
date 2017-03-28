@@ -65,10 +65,14 @@ public class Dispatcher {
             return false;
         }
 
-        boolean result = true;
-
         String[] urlLays = requestedUrl.split("[/\\\\]");
         String[] pathLays = path.split("[/\\\\]");
+
+        if (urlLays.length != pathLays.length) {
+            return false;
+        }
+
+        boolean result = true;
 
         for (int i = 0; i < urlLays.length; i++) {
             String urlOne = urlLays[i];
