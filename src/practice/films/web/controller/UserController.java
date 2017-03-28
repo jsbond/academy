@@ -1,12 +1,23 @@
 package practice.films.web.controller;
 
+import practice.films.model.User;
 import practice.films.service.UserService;
 import practice.films.service.impl.UserServiceImpl;
+import practice.films.web.http.Component;
+import practice.films.web.http.HttpMethod;
+import practice.films.web.http.RequestMapping;
 
+@Component
 public class UserController implements Controller {
-    private static UserController userController;
+
     private UserService userService;
 
+    @RequestMapping(httpMethod = HttpMethod.GET, path = "/users/{userId}")
+    public User getUser(String userId) {
+        return userService.getUserById(Long.parseLong(userId));
+    }
+
+    private static UserController userController;
     private UserController(UserService userService) {
         this.userService = userService;
     }
@@ -17,6 +28,4 @@ public class UserController implements Controller {
         }
         return userController;
     }
-
-
 }
