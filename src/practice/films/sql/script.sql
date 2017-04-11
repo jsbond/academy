@@ -63,5 +63,14 @@ VALUES
   (2, 4)
 ;
 
+INSERT INTO `users`
+(name, login, password)
+VALUES
+  ('Антон', 'anton@mail.ru', 'olala'),
+  ('Петя', 'petya@gmail.com', '111'),
+  ('Вася', 'vasya@gmail.com', '222'),
+  ('Ольга', 'olga@gmail.com', '333')
+;
+
 
 

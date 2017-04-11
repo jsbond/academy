@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Generics {
 
-    public void doSomething(List<Animal> animals) {
+    public <T> void doSomething(List<T> animals) {
 
     }
 
@@ -14,13 +14,20 @@ public class Generics {
     }
 
     public static void main(String[] args) {
-        List<Animal> animals = new ArrayList<>();
+        List<Dog> animals = new ArrayList<>();
         animals.add(new Dog());
         animals.add(new Dog());
 
+        List<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(1);
+
         Generics generics = new Generics();
-        generics.doSomething(animals);
-        generics.doSomethingElse(animals);
+        generics.doSomething(integerList);
+//        generics.doSomethingElse(animals);
+
+
     }
 }
 

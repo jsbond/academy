@@ -8,3 +8,17 @@
 2017-03-28 21:24:07 FATAL Test:19 - 1
 2017-04-06 23:23:20 ERROR MovieDAO:28 - Invalid value for getInt() - 'Город грехов'
 2017-04-06 23:24:02 ERROR MovieDAO:28 - Invalid value for getInt() - 'Город грехов'
+2017-04-11 21:35:33 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:36:27 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:36:45 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:37:34 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:39:34 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:40:40 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:41:46 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:41:51 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:43:24 ERROR UserDAO:53 - can't get user with loginAnton root exception is: Unknown column 'Anton' in 'where clause'
+2017-04-11 21:43:44 ERROR UserDAO:53 - can't get user with loginАнтон root exception is: Unknown column 'Антон' in 'where clause'
+2017-04-11 21:43:56 ERROR UserDAO:53 - can't get user with loginАнтон root exception is: Unknown column 'Антон' in 'where clause'
+2017-04-11 21:48:05 ERROR UserDAO:53 - can't get user with loginАнтон root exception is: Unknown column 'Антон' in 'where clause'
+2017-04-11 21:51:38 ERROR UserDAO:55 - can't get user with loginАнтон root exception is: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?Антон' at line 1
+2017-04-11 21:52:00 ERROR UserDAO:55 - can't get user with loginАнтон root exception is: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?Антон' at line 1

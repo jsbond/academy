@@ -17,6 +17,11 @@ public class UserController implements Controller {
         return userService.getUserById(Long.parseLong(userId));
     }
 
+    @RequestMapping(httpMethod = HttpMethod.POST, path = "/users/login")
+    public String login(String login, String password) {
+        return userService.login(login, password);
+    }
+
     private static UserController userController;
     private UserController(UserService userService) {
         this.userService = userService;
