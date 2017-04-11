@@ -2,7 +2,7 @@ package practice.films.web.controller;
 
 import java.util.List;
 
-import practice.films.model.Film;
+import practice.films.model.Movie;
 import practice.films.service.FilmService;
 import practice.films.service.impl.FilmServiceImpl;
 import practice.films.web.http.Component;
@@ -16,7 +16,7 @@ public class SiteController implements Controller {
 
     //TODO add real functional with categories and another info on this page
     @RequestMapping(httpMethod = HttpMethod.GET, path = "")
-    public List<Film> startMenu() {
+    public List<Movie> startMenu() {
         return filmService.getFilms();
     }
 

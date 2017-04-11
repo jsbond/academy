@@ -26,8 +26,8 @@ public class Main implements Copier {
 //        Main service1 = new Main(new BytesCopier());
 //        service1.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
 //
-//        Main service2 = new Main(new CharactersCopier());
-//        service2.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
+        Main service2 = new Main(new CharactersCopier());
+        service2.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);
 
         Main service3 = new Main(new BufferCopier());
         service3.copy(RESOURCE_DIRECTORY, DESTINATION_DIRECTORY);

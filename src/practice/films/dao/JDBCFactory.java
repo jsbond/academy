@@ -20,7 +20,7 @@ public class JDBCFactory {
 
         try {
             connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost:3306/users","root", "olala");
+                    .getConnection("jdbc:mysql://localhost:3306/site","root", "olala");
 
         } catch (SQLException e) {
             System.out.println("Connection Failed! Check output console");

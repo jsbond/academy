@@ -20,9 +20,11 @@ public class UserController {
 
     public User getUser(long userId) {
         User user =  userService.getUserById(userId);
-        //int tickets = bookingService.getNumberOfTicketsForUser(userId);
-        user.setNumberOfTickets(5);
+        int tickets = bookingService.getNumberOfTicketsForUser(userId);
+        user.setNumberOfTickets(tickets);
 
         return user;
     }
+
+    //usercontroller getUser -> userService, bookingService
 }

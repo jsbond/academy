@@ -10,7 +10,8 @@ import java.util.Date;
 public class Rectangle extends Shape implements Serializable {
     private Date createdBy;
     private int radius = 5;
-    private transient Thread thread = Thread.currentThread();
+
+    private String string = "myPassword";
 
     public Rectangle() {
         System.out.println("конструктор потомка");

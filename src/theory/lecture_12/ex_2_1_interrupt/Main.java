@@ -10,8 +10,9 @@ public class Main {
 
         myThread.start();                                                   //RUNNABLE
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
 //        myThread.stop();
         myThread.interrupt();                                              // TERMINATED
+        System.out.println("закончено");
     }
 }

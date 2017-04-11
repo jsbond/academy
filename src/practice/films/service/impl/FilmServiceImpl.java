@@ -3,27 +3,27 @@ package practice.films.service.impl;
 
 import java.util.List;
 
-import practice.films.dao.FilmDAO;
-import practice.films.model.Film;
+import practice.films.dao.MovieDAO;
+import practice.films.model.Movie;
 import practice.films.service.FilmService;
 
 
 public class FilmServiceImpl implements FilmService {
-    private FilmDAO filmDAO;
+    private MovieDAO movieDAO;
 
     @Override
-    public List<Film> getFilms() {
-        return filmDAO.getAll();
+    public List<Movie> getFilms() {
+        return movieDAO.getAll();
     }
 
     private static FilmServiceImpl filmService;
-    private FilmServiceImpl(FilmDAO filmDAO) {
-        this.filmDAO = filmDAO;
+    private FilmServiceImpl(MovieDAO movieDAO) {
+        this.movieDAO = movieDAO;
     }
 
     public static FilmServiceImpl getInstance() {
         if (filmService == null) {
-            filmService = new FilmServiceImpl(FilmDAO.getInstance());
+            filmService = new FilmServiceImpl(MovieDAO.getInstance());
         }
         return filmService;
     }

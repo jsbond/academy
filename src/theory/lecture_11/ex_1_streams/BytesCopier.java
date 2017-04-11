@@ -18,7 +18,8 @@ public class BytesCopier implements Copier {
 
     @Override
     public void copy(String resource, String destination) {
-        try (FileInputStream in = new FileInputStream(resource); FileOutputStream out= new FileOutputStream(destination)) {
+        try (FileInputStream in = new FileInputStream(resource);
+            FileOutputStream out= new FileOutputStream(destination)) {
 
             int c;
 

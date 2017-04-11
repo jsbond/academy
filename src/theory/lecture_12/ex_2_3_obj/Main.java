@@ -2,9 +2,7 @@ package theory.lecture_12.ex_2_3_obj;
 
 import java.io.Serializable;
 
-/**
- * прерывание потока
- */
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {

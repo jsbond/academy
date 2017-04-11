@@ -15,12 +15,12 @@ public class Square implements Serializable {
     private int radius = 5;
 
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
-        throw new NotSerializableException("Не сегодня!");
-    }
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        throw new NotSerializableException("Не сегодня!");
-    }
+//    private void writeObject(ObjectOutputStream out) throws IOException {
+//        System.out.println("111");
+//    }
+//    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+//        System.out.println("222");
+//    }
 
     public Square() {
         createdBy = new Date();

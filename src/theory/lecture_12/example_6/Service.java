@@ -1,13 +1,15 @@
 package theory.lecture_12.example_6;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Service {
-    private int counter;
+    private AtomicInteger counter = new AtomicInteger(0);
 
     public void increment() {
-        counter++;
+        counter.getAndIncrement();
     }
 
-    public int getCounter() {
+    public AtomicInteger getCounter() {
         return counter;
     }
 }

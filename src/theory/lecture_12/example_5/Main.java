@@ -15,9 +15,11 @@ public class Main {
         thread1.setPriority(10);
         thread2.setPriority(1);
 
+        thread2.setDaemon(true); //почему ошибка
+
         thread1.start();
         thread2.start();
 
-        thread2.setDaemon(true); //почему ошибка
+
     }
 }

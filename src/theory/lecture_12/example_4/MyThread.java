@@ -10,7 +10,7 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-//        synchronized (service) {
+        synchronized (service) {
             for (int i = 0; i < 1000; i++) {
                 service.increment();
             }
@@ -19,6 +19,6 @@ public class MyThread extends Thread {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-//        }
+        }
     }
 }

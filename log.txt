@@ -1,0 +1,10 @@
+2017-03-28 21:20:35 INFO  Test:16 - 1
+2017-03-28 21:20:35 WARN  Test:17 - 1
+2017-03-28 21:20:35 ERROR Test:18 - 1
+2017-03-28 21:20:35 FATAL Test:19 - 1
+2017-03-28 21:24:07 INFO  Test:16 - 1
+2017-03-28 21:24:07 WARN  Test:17 - 1
+2017-03-28 21:24:07 ERROR Test:18 - 1
+2017-03-28 21:24:07 FATAL Test:19 - 1
+2017-04-06 23:23:20 ERROR MovieDAO:28 - Invalid value for getInt() - 'Город грехов'
+2017-04-06 23:24:02 ERROR MovieDAO:28 - Invalid value for getInt() - 'Город грехов'

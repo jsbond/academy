@@ -10,7 +10,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.Spy;
 import org.mockito.runners.MockitoJUnitRunner;
-import practice.mockito.controller.UserController;
 import practice.mockito.model.User;
 import practice.mockito.service.BookingService;
 import practice.mockito.service.UserService;
@@ -24,8 +23,7 @@ public class UserControllerTests {
     @InjectMocks
     UserController userController;
 
-    @Mock
-    UserService userService;
+    UserService userService = Mockito.mock(UserService.class);
 
     @Mock
     BookingService bookingService;
@@ -46,7 +44,6 @@ public class UserControllerTests {
         //для второго теста
         Mockito.when(bookingService.getNumberOfTicketsForUser(20L)).thenReturn(25);
         Mockito.when(userService.getUserById(20L)).thenReturn(user);
-
     }
 
     @Test
@@ -56,12 +53,7 @@ public class UserControllerTests {
         Assert.assertEquals(125, result);
 
         Mockito.verify(userService).getUserBalance(1L);
-
         Mockito.verify(userService, Mockito.times(1)).getUserBalance(1L);
-
-        Mockito.when(testList.size()).thenReturn(100);
-        int size = testList.size();
-        Assert.assertEquals(100, testList.size());
 
     }
 
@@ -73,9 +65,14 @@ public class UserControllerTests {
         Assert.assertEquals("email", result.getEmail());
         Assert.assertEquals("petya", result.getName());
         Assert.assertEquals(25, result.getNumberOfTickets());
+    }
 
+    @Test
+    public void test_List() {
+        Mockito.when(testList.size()).thenReturn(100);
 
-
+        int size = testList.size();
+        Assert.assertEquals(100, testList.size());
     }
 
 }
