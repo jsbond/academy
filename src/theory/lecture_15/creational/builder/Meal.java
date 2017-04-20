@@ -6,11 +6,11 @@ import java.util.List;
 public class Meal {
     private List<Item> items = new ArrayList<>();
 
-    private Meal() {
+    protected Meal() {
 
     }
 
-    public void addItem(Item item) {
+    private void addItem(Item item) {
         items.add(item);
     }
 
@@ -35,7 +35,8 @@ public class Meal {
         return new MealBuilder();
     }
 
-    private static class MealBuilder {
+    public static class MealBuilder {
+        private List<Item> itemList = new ArrayList<>();
 
         public Meal prepareVegMeal() {
             Meal meal = new Meal();
@@ -48,6 +49,24 @@ public class Meal {
             Meal meal = new Meal();
             meal.addItem(new ChickenBurger());
             meal.addItem(new Pepsi());
+            return meal;
+        }
+
+        public Meal getSuperMeal() {
+            Meal meal = new SuperMeal();
+            meal.addItem(new VegBurger());
+            meal.addItem(new Coke());
+            return meal;
+        }
+
+        public MealBuilder addItem(Item item) {
+            itemList.add(item);
+            return this;
+        }
+
+        public Meal build() {
+            Meal meal = new Meal();
+            meal.items.addAll(itemList);
             return meal;
         }
     }
