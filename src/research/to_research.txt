@@ -1,0 +1,5 @@
+Mockito InOrder  - to verify order of calls
+
+final InOrder inOrder = inOrder(caseReferenceEnrichment, linkBuilderService);
+inOrder.verify(caseReferenceEnrichment).enrichUkDocReferences(any(Collection.class));
+inOrder.verify(linkBuilderService).addDocumentLinksToReferences(any(Collection.class), any(LinkBuilderRequest.class));
