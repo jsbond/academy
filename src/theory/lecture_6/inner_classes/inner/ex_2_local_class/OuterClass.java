@@ -1,4 +1,4 @@
-package theory.lecture_6.ex_1_local_class;
+package theory.lecture_6.inner_classes.inner.ex_2_local_class;
 
 /**
  * Created by StudentTC on 20.12.2016.

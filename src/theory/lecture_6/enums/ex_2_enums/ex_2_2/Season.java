@@ -1,4 +1,4 @@
-package theory.lecture_6.ex_2_enums.ex_2_2;
+package theory.lecture_6.enums.ex_2_enums.ex_2_2;
 
 /**
  * Created by StudentTC on 25.10.2016.
