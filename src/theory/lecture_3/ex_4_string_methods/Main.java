@@ -45,6 +45,7 @@ public class Main {
 
         // Классы Pattern Matcher нужны для использования регулярных выражений.
         // https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html
+//        https://www.tutorialspoint.com/java/java_regular_expressions.htm
 
 //        Pattern p = Pattern.compile("!");
 //        Matcher m = p.matcher(s1);
