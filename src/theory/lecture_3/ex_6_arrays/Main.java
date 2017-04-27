@@ -1,7 +1,4 @@
-package theory.lecture_3.ex_5_arrays;
-
-import java.util.Arrays;
-import java.util.Random;
+package theory.lecture_3.ex_6_arrays;
 
 /**
  * Created by andrei on 12.12.2016.
