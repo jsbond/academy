@@ -21,4 +21,12 @@ public class MyObject {
     public void setString(String string) {
         this.string = string;
     }
+
+    @Override
+    public String toString() {
+        return "MyObject{" +
+                "primitive=" + primitive +
+                ", string='" + string + '\'' +
+                '}';
+    }
 }

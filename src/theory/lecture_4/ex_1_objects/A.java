@@ -1,5 +1,7 @@
 package theory.lecture_4.ex_1_objects;
 
+import theory.lecture_4.ex_2_object.MyObject;
+
 public class A {
 
     //статическая переменная относится к классу, обращаться к ней нужно используя название класса
@@ -8,6 +10,7 @@ public class A {
     //ленивая инициализация, т.е. отложенная, будет сделана не на этапе создания класса
     // (или объекта в случае с не статической переменной)
     private static final String staticString;
+    private MyObject object;
 
     //переменная экземпляра, относится к экземпляру, т.е. объекту
     private int nonStaticInt;
@@ -34,9 +37,55 @@ public class A {
     public A(int nonStaticInt) {
         //this() - это вызов конструктора по умолчанию.
         // Т.е. отработает сначала инициализация с помощью дефаултного конструктора, потом все остальное что в этом блоке
-        this();
+        this("abc");
         //this - это обращение к самому объекту, который мы создаем с помощью конструктора
         //таким образом мы инициализируем переменную, относящуюся к объекту.
         this.nonStaticInt = nonStaticInt;
+
+    }
+
+    public A(String s) {
+        int x = 20;
+        int y = 30;
+
+        if (true) {
+            System.out.println(10);
+        } else {
+            int f = x == 20
+                    ? 5
+                    : 4;
+        }
+    }
+
+    public A(A a) {
+        this.nonStaticInt = a.nonStaticInt;
+        MyObject o = new MyObject();
+
+        this.object = o;
+
+    }
+
+    public MyObject getObject() {
+        MyObject copy = new MyObject();
+        copy.setName(object.getName());
+        return copy;
+    }
+
+    public void run() {
+        String[] strings = {"abc", "cde"};
+        String result = concat("1", "2");
+    }
+
+    public void jump() {
+        String result = concat("a", "b", "c", "D");
+    }
+
+    public String concat(String... strings) {
+        String result = "";
+
+        for (int i = 0; i < strings.length; i++) {
+            result += strings[i];
+        }
+        return result;
     }
 }

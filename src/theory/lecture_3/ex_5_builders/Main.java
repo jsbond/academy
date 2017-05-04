@@ -6,8 +6,8 @@ public class Main {
         //StringBuilder позволяет не создавать при конкатенации (сложении, склеивании строк) каждый раз новую строку.
         StringBuilder sb = new StringBuilder(1);
         prepareBuilder(sb);
-
-        System.out.println(sb.toString());
+        String s1 = sb.toString();
+        System.out.println(s1);
 
         //изначально использовался StringBuffer - потокобезопасный, но более медленный. Вот что в его описании:
 

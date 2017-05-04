@@ -21,6 +21,9 @@ public class Main {
             System.out.println("пример 2");
         }
 
+//        s1 = null;
+//        boolean x = "abc".equals(s2);
+
         //из описания метода intern()
 
         /**

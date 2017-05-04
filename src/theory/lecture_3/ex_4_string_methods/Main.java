@@ -16,8 +16,8 @@ public class Main {
 //        System.out.println(b1);
 
         //склеиваем строку
-//        s1.concat(s1);
-//        System.out.println(s1);
+//        System.out.println(s1 + s1);
+//        System.out.println(s1.concat(s1));
 
         //получаем массив байтов
 //        byte[] bytes = s1.getBytes();
@@ -49,23 +49,17 @@ public class Main {
 
 //        Pattern p = Pattern.compile("!");
 //        Matcher m = p.matcher(s1);
-
+//
 //        while (m.find()) {
+//
 //            System.out.println(1);
 //        }
-
+//
 //        String s4 = s1.replace("!", "?");
 //        System.out.println(s4);
 //
-//        String s5 = s1.replaceAll("[А-Я,а-я]", "?");
+
+//        String s5 = s1.replaceAll("[А-Я,а-я]", "1" + "\u005c\u005c\u005c\u005c");
 //        System.out.println(s5);
-
-
-
-
-
-
-
-
     }
 }

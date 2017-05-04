@@ -14,16 +14,24 @@ public class Main {
 //        System.out.println(result);
 
         MyObject result = new MyObject();
-        String[] mass = new String[1];
         System.out.println(result.toString());
         testObject(result);
-
-        System.out.println(result.getPrimitive());
-        System.out.println(result.getString());
-
         System.out.println(result.toString());
+//
+//        System.out.println(result.getPrimitive());
+//        System.out.println(result.getString());
+//
+//        System.out.println(result.toString());
+    }
 
+    public static void testObject(MyObject object) {
+        object.setPrimitive(20);
+        object.setString("no");
+    }
 
+    public static String testString(String string) {
+        string = "no";
+        return string;
     }
 
     /**
@@ -39,17 +47,12 @@ public class Main {
      * когда мы меняем значение string на "no", ссылка, хранящаяся в String result, не меняется.
      * String в Java - immutable object, т.е. неизменяем. Мы можем поменять ссылку, но не саму строку.
      */
-    public static String testString(String string) {
-        return "no";
-    }
+
 
     /**
      *  в локальной переменной result хранится ссылка на область памяти в heap, где хранится объект.
      *  когда мы меняем поля объекта, хранящегося в object переменной, нужно помнить, что меняется и result,
      *  т.к. это один и тот же объект (ссылки у object и result совпадают)
      */
-    public static void testObject(MyObject object) {
-        object.setPrimitive(20);
-        object.setString("no");
-    }
+
 }
