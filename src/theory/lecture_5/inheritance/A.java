@@ -23,4 +23,8 @@ public class A {
     public void setVariable(int variable) {
         this.variable = variable;
     }
+
+    public static void run() {
+        System.out.println("!!!!!");
+    }
 }

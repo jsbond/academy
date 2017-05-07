@@ -1,6 +1,6 @@
 package theory.lecture_5.inheritance;
 
-public class B extends A {
+public class B extends A  {
     protected int variable = 20;
     private final static String url;
 
@@ -32,5 +32,10 @@ public class B extends A {
 
     public int getVariable() {
         return variable;
+    }
+
+
+    public static void run() {
+        System.out.println("???????");
     }
 }

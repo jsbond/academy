@@ -6,7 +6,10 @@ public class Main {
 
         //при запуске main видна очередность вызова блоков и конструкторов классов А и В
         //класс В наследует А поэтому имеет переменные и методы класса А
-        B b = new B();
-        System.out.println(b.getVariable());
+//        A b = new B();
+//        b.run();
+//        Object o = new B();
+
+//        System.out.println(b.getVariable());
     }
 }
