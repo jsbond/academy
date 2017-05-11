@@ -9,7 +9,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 public class Main {
     public static void main(String[ ] args) {
         try {
-// создание SAX-анализатора
+            // создание SAX-анализатора
             XMLReader reader = XMLReaderFactory.createXMLReader();
             StudentHandler handler = new StudentHandler();
             reader.setContentHandler(handler);
