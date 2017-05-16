@@ -12,5 +12,6 @@ public class OuterClass {
         }
 
         Inner inner = new Inner();
+        inner.innerMethod();
     }
 }

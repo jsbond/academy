@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Season season = Season.SPRING;
         System.out.println(season.getCountOfDays());
-//        System.out.println(season.name());
+        System.out.println(season.name());
         System.out.println(season.ordinal());
 
         Season[] seasons = Season.values();
