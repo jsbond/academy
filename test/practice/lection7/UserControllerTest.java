@@ -48,5 +48,6 @@ public class UserControllerTest {
 		// then
 		Assert.assertEquals(expected, actual);
 		Assert.assertThat(actual, CoreMatchers.is(expected));
+
 	}
 }
